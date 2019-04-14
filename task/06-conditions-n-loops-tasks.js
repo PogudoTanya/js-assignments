@@ -435,7 +435,8 @@ function getMatrixProduct(m1, m2) {
  *
  */
 function evaluateTicTacToePosition(position) {
-    throw new Error('Not implemented');
+    
+    //throw new Error('Not implemented');
 }
 
 

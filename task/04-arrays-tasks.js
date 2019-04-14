@@ -23,7 +23,13 @@
  *    [0, 1, 2, 3, 4, 5], 5    => 5
  */
 function findElement(arr, value) {
-   throw new Error('Not implemented');
+   for(var i=0; i< arr.length; i++)
+   {
+      if(arr[i]==value) {
+      return i;
+      }
+   }
+      return -1;
 }
 
 /**
@@ -38,7 +44,11 @@ function findElement(arr, value) {
  *    5 => [ 1, 3, 5, 7, 9 ]
  */
 function generateOdds(len) {
-   throw new Error('Not implemented');
+   var arr = [];
+   for(var i =0 ; i< len; ++i){
+arr[i] = (i*2 +1);
+   }
+   return arr;
 }
 
 
@@ -54,7 +64,11 @@ function generateOdds(len) {
  *    [] => [] 
  */
 function doubleArray(arr) {
-   throw new Error('Not implemented');
+   if(arr ==[])
+   return arr;
+   var rezarr = [];
+   var arr_ = []
+    rezarr = arr.concat(arr);
 }
 
 
@@ -70,7 +84,9 @@ function doubleArray(arr) {
  *    [] => [] 
  */
 function getArrayOfPositives(arr) {
-   throw new Error('Not implemented');
+  
+     var result = arr.filter(arr => arr > 0);
+     return result;
 }
 
 /**
@@ -82,10 +98,18 @@ function getArrayOfPositives(arr) {
  * @example
  *    [ 0, 1, 'cat', 3, true, 'dog' ] => [ 'cat', 'dog' ]
  *    [ 1, 2, 3, 4, 5 ] => []
- *    [ 'cat, 'dog', 'raccon' ] => [ 'cat', 'dog', 'racoon' ]
+ *    [ 'cat', 'dog', 'raccon' ] => [ 'cat', 'dog', 'racoon' ]
  */
 function getArrayOfStrings(arr) {
-   throw new Error('Not implemented');
+   var mass= [];
+   for(var i=0; i<arr.length; i++)
+   {
+      if(typeof arr[i] === 'string')
+          {
+             mass.push(arr[i]);
+          }
+   }
+   return mass;
 }
 
 /**
